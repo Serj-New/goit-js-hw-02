@@ -1,6 +1,12 @@
 'use strict';
 
-/* First Var */
+/* Перша варіація функції formatMessage */
+
+function formatMessage(message, maxLength) {
+    return message.length <= maxLength ? message : message.slice(0, maxLength) + "...";
+}
+
+/* Друга варіація функції formatMessage
 
 function formatMessage(message, maxLength) {
     if(message.length <= maxLength) {
@@ -8,12 +14,6 @@ function formatMessage(message, maxLength) {
     } else {
         return message.slice(0, maxLength) + "...";
     }
-}
-
-/* Second Var
-
-function formatMessage(message, maxLength) {
-    return message.length <= maxLength ? message : message.slice(0, maxLength) + "...";
 }
 */
 

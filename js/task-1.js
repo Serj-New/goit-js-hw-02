@@ -1,13 +1,13 @@
 'use strict';
 
-/* First Var */
+/* Перша варіація функції makeTransaction */
 
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
     let totalPrice = quantity * pricePerDroid;
     return totalPrice > customerCredits ? "Insufficient funds!" : `You ordered ${quantity} droids worth ${totalPrice} credits!`;
 }
 
-/* Second Var
+/* Друга варіація функції makeTransaction
 
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
     let totalPrice = quantity * pricePerDroid;
